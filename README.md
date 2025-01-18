@@ -100,7 +100,4 @@ Ensure you have the following installed on your system:
 ## License
 This project is licensed under the MIT License. Feel free to contribute and improve the project!
 
----
 
-## Contact
-For any inquiries or feedback, please contact us at: [your-email@example.com].
