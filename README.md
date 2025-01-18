@@ -47,7 +47,7 @@ Ensure you have the following installed on your system:
 
 1. Clone the repository:
    ```bash
-  
+   https://github.com/LilRag/Burger-Builder-Website.git
    cd burger-builder
    ```
 
