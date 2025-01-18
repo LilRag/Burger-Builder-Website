@@ -47,13 +47,13 @@ Ensure you have the following installed on your system:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/burger-builder.git
+  
    cd burger-builder
    ```
 
 2. Install dependencies for both frontend and backend:
    ```bash
-   cd client
+   cd burger-builder
    npm install
    cd ../server
    npm install
