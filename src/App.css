@@ -1,0 +1,65 @@
+/* General Page Layout */
+.App {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-image: url('https://imgs.search.brave.com/z1rKOVpTEuOVNHUmtNwO1ik4nL_C_9Tna9WyJYE_SeY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly92ZW5u/Z2FnZS13b3JkcHJl/c3MuczMuYW1hem9u/YXdzLmNvbS91cGxv/YWRzLzIwMTgvMDkv/TmF0dXJhbC1Xb29k/LVBhbmVscy1TaW1w/bGUtQmFja2dyb3Vu/ZC1JbWFnZS5qcGVn'); /* Background image */
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  color: white;
+  padding: 20px;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.hero-text {
+  flex: 1;
+  padding: 20px;
+  color: beige;
+  text-align: left;
+}
+
+.hero-text h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-text h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+.burger-img {
+  width: 100%;
+  max-width: 600px; /* Control image size */
+  height: auto;
+  border-radius: 10px;
+}

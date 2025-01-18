@@ -1,0 +1,118 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-image: url('/img/wood.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: white;
+    padding: 20px;
+    width:1600px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.hero-text {
+    flex: 1;
+    padding: 20px;
+    color: beige; /* Text color */
+    text-align: left; /* Align text to the left */
+    font-family: 'Arial', sans-serif; /* Modern font choice */
+}
+
+.hero-text h2 {
+    font-size: 3rem; /* Main heading size */
+    margin-bottom: 10px; /* Space below heading */
+    color: beige; /* Heading color */
+    font-family: 'Courier New', Courier, monospace; /* Typewriter-style font */
+}
+
+.hero-text h3 {
+    font-size: 2rem; /* Subheading size */
+    margin-bottom: 10px; /* Space below subheading */
+}
+
+.hero-text p {
+    font-size: 1.2rem; /* Paragraph size */
+    line-height: 1.6; /* Line height for readability */
+    color:beige;
+}
+
+.hero-image {
+    flex: 1; /* Allow image to take up space */
+    text-align: center; /* Center align image */
+}
+
+.burger-img {
+    padding-top: 60px;
+    padding-left: 100px;
+    width: 100%; /* Full width of container */
+    max-width: 600px; /* Control image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for image */
+}
+
+.typewriter {
+    position: relative;
+    display: inline-block;
+   
+  }
+  
+  .cursor {
+    opacity: 0;
+    display: inline-block;
+    margin-left: 2px;
+    animation: none;
+    color:beige;
+  }
+  
+  .cursor.typing {
+    animation: blink 0.7s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  .login-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    padding-right: 550px;
+  
+  }
+  
+  .login-btn {
+    display: inline-block;
+
+    padding: 12px 24px;
+    background-color: rgb(243, 35, 35);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .login-btn:hover {
+    background-color: #ff4141;
+  }
+  

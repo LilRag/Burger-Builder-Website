@@ -1,0 +1,31 @@
+/* TermsAndConditions.css */
+
+.terms-container {
+    max-width: 800px; /* Limit width for better readability */
+    margin: 20px auto; /* Center the container */
+    padding: 20px; /* Add padding */
+    background-color: #ffffff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-top: 70px;
+  }
+  
+  h1 {
+    font-size: 2.5rem; /* Main heading size */
+    color: #333; /* Dark text color */
+  }
+  
+  h2 {
+    font-size: 1.8rem; /* Subheading size */
+    color: #4a5568; /* Slightly lighter color for subheadings */
+  }
+  
+  p {
+    font-size: 1rem; /* Paragraph size */
+    line-height: 1.3; /* Improved line spacing */
+    color: #555; /* Text color */
+  }
+  
+  ul {
+    margin-left: 20px; /* Indent list items */
+  }

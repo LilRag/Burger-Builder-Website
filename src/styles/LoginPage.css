@@ -1,0 +1,140 @@
+
+
+.login-page {
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .login-popup {
+    margin-left: 60px;
+    margin-top:60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    max-width: 800px;
+    max-height: 600px;
+    width: 90%;
+    background-color: #eed3c2;
+
+  }
+
+  .login-container {
+    padding: 20px;
+    width: 50%;
+  }
+
+  .image-container {
+    width: 50%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    margin-bottom:50px;
+  }
+
+  .logo {
+    width: 60px;
+    align-items: center ;
+    margin-left:130px;
+    height:50%;
+    width: 20%;
+  }
+
+  h2 {
+    color: #72350d;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: #72350d;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 2px ;
+    background-color: #fff;
+  }
+
+  .input-container input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .button {
+    background-color: #FF4136; /* Replace with your desired color */
+    color: white;
+    border: none;
+    width:90%;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    height:40px
+  }
+
+  .or-text {
+    margin: 15px 0;
+    font-size: 12px;
+    color: #666;
+  }
+
+  .terms {
+    font-size: 12px;
+    color: #666;
+    margin-top: 20px;
+  }
+
+  .terms a {
+    color: #b35b2e;
+    text-decoration: none;
+  }
+
+  .terms a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .login-popup {
+      flex-direction: column;
+    }
+
+    .login-container, .image-container {
+      width: 100%;
+    }
+  }
+}

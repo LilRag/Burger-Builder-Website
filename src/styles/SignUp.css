@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  
+}
+
+.signup-popup {
+  margin-top: 60px;
+  margin-left:60px;
+  display: flex;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  max-height: 600px;
+  max-width: 900px;
+  width: 90%;
+  background-color: #eed3c2;
+}
+
+.signup-container {
+  padding: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  color: #682f09;
+  margin-bottom: 15px;
+  margin-right:45px;
+}
+
+.input-container {
+  margin-bottom: 15px;
+}
+
+.input-container{
+  width: 90%;
+  height:35px;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  font-size: 12px;
+  color: #666;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.signup-button {
+  padding: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #db2f23;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width:90%;
+}
+
+.terms {
+  font-size: 12px;
+  color: #666;
+  margin-top: 20px;
+}
+
+.terms a {
+  color: #b35b2e;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
+
+.image-container {
+width:50%; 
+align-items: flex-start;
+justify-content: center left;
+padding-top: 180px;
+background-color: #eed3c2;
+}
+
+.img1{
+  width:400px;
+}
+
+.logo{
+  width:75px;
+  margin-left: 105px;
+}
+
+
+@media (max-width: 768px) {
+  .signup-popup {
+      flex-direction: column;
+  }
+  .signup-container, .image-container {
+      width: 100%;
+  }
+}

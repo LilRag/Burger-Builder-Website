@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600&display=swap');
+
+:root {
+  --primary-color: #FF6B6B;
+  --secondary-color: #3498DB;
+  --background-color: #F7F9FB;
+  --text-color: #2C3E50;
+  --border-color: #ECF0F1;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+.big{
+  max-width: 1600px;
+}
+.checkout-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+.checkout-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr ;
+  gap: 30px;
+}
+
+.section-header h2 {
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.checkout-details,
+.checkout-form,
+.checkout-summary {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.order-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: var(--background-color);
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.address-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.payment-options {
+  display: flex;
+  gap: 15px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.payment-option.selected {
+  background-color: var(--secondary-color);
+  color: white;
+  border-color: var(--secondary-color);
+}
+
+.bill-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.bill-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.bill-row.total {
+  border-bottom: none;
+  font-size: 1.2em;
+}
+
+.place-order-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.tip-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.tip-buttons button {
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.tip-buttons button.selected {
+  background-color: var(--secondary-color);
+  color: white;
+}

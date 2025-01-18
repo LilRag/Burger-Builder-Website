@@ -1,0 +1,239 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+:root {
+  --heading-font: 'Plus Jakarta Sans', sans-serif;
+  --body-font: 'Outfit', sans-serif;
+}
+.burgi{
+  max-width: 1600px;
+}
+.burger-builder {
+  width: 1200px; /* Increased from 1200px */
+  margin: 65px auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  min-height: 100vh;
+  border-radius: 30px;
+}
+
+.burger-builder h1 {
+  font-size: 2.8rem;
+  color: #2d3436;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.burger-builder h2 {
+  font-size: 1.8rem;
+  color: #2d3436;
+  margin: 2rem 0 1rem;
+  font-weight: 600;
+}
+
+.option-group {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+              0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Fixed 4 cards per row */
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  min-width: 220px; /* Minimum width for cards */
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.option-image {
+  width: 150px; /* Increased from 120px */
+  height: 150px; /* Increased from 120px */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.total-price {
+  background: #4a90e2;
+  color: white;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.price {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(255, 255, 255, 0.95);
+  color: #2d3436;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1rem;
+  color: #4a5568;
+  width: 100%;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.card input[type="radio"],
+.card input[type="checkbox"] {
+  width: 1.3rem;
+  height: 1.3rem;
+  accent-color: #4a90e2;
+  cursor: pointer;
+}
+
+.burgbuild {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 1.25rem 2.5rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin: 1rem 1rem 1rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.burgbuild:hover {
+  background-color: #357abd;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+button:disabled {
+  background-color: #cbd5e0;
+  cursor: not-allowed;
+}
+
+.burger-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 1.5rem;
+}
+
+.burger-list li {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  font-size: 1rem;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+.burger-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.burger-price {
+  background: #4a90e2;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-left: 1.5rem;
+  white-space: nowrap;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: #f7fafc;
+  color: #2d3436;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1400px) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1100px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .burger-builder {
+    padding: 1rem;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .option-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  button {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .burger-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer {
+  width: 1600px; /* Keep the width as is */
+  height: 50px; /* Adjusted height to 50px */
+  background-color: #333; /* Optional: Set a background color for visibility */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  
+}
